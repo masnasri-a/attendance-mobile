@@ -30,7 +30,7 @@ class __MainPageState extends State<_MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarMainPage(),
+      appBar: appBarMainPage(context),
       backgroundColor: defaultBgColor,
       body: Stack(
         fit: StackFit.loose,
