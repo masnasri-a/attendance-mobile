@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: defaultBgColor,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Attendance Home'),
       initialRoute: '/',
       routes: {
         '/home': (context) => const MainPage(),
@@ -71,8 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
         Navigator.pushNamed(context, '/home');
       });
     });
-
-    
   }
 
   @override

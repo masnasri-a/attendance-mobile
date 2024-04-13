@@ -1,8 +1,9 @@
-import 'package:attendance/components/footer_menu.dart';
+import 'package:attendance/components/footer.dart';
 import 'package:attendance/components/header_appbar.dart';
 import 'package:attendance/components/home/attendance.dart';
 import 'package:attendance/components/home/history_activity.dart';
 import 'package:attendance/components/home/today_activity.dart';
+import 'package:attendance/task/main.dart';
 import 'package:attendance/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,6 +28,7 @@ class _MainPage extends StatefulWidget {
 }
 
 class __MainPageState extends State<_MainPage> {
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,7 +59,9 @@ class __MainPageState extends State<_MainPage> {
           ),
         ],
       ),
-      bottomNavigationBar: FooterMenu(),
+      bottomNavigationBar: FooterMenu(
+        selectedIndex: 0,
+      ),
     );
   }
 }
