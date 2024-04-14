@@ -1,4 +1,5 @@
 import 'package:attendance/home/main.dart';
+import 'package:attendance/profiles/main.dart';
 import 'package:attendance/task/main.dart';
 import 'package:attendance/theme.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,8 @@ class FooterMenu extends StatelessWidget {
         } else if (value == 2) {
           Navigator.pushNamed(context, '/service');
         } else if (value == 3) {
-          Navigator.pushNamed(context, '/profile');
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ProfilePage()));
         }
       },
     );
